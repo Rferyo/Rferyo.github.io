@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pregunta y Respuestas</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.pinimg.com/1200x/1a/f9/f1/1af9f15463e95e6df5a4c793c8680600.jpg'); /* Asegúrate de tener la imagen en la misma carpeta */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .container {
+    background-color: rgb(97, 54, 214);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>¿Me perdonas ya o tengo que hacer algo mas?</h1>
+  <button id="respuesta1">Si</button>
+  <button id="respuesta2">No</button>
+</div>
+<script>
+  const respuesta1Btn = document.getElementById("respuesta1");
+  const respuesta2Btn = document.getElementById("respuesta2");
+  
+  respuesta1Btn.addEventListener("click", () => mostrarMensaje("Por fin dejas la mariquera nawara, cuando llegues de tu viaje iremos a comer helado y si quieres veo hasta barbie por ti pajua, Je t'aime"));
+  respuesta2Btn.addEventListener("click", () => mostrarMensaje("Por si eligues esta opcion ps, deja la mariquera que cuando llegues iremos a comer helado"));
+
+  function mostrarMensaje(mensaje) {
+    alert(mensaje);
+  }
+</script>
+</body>
+</html>
